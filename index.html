@@ -3,57 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Top Up Game DI MMM.WEB.ID</title>
+  <title>Topup Game DI MMM.WEB.ID</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
-      font-family: "Poppins", sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: white;
+      font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      flex-direction: column;
+      background: linear-gradient(135deg, #ff0080, #7928ca);
+      color: white;
       text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .card {
+      background: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.3);
+      max-width: 400px;
     }
     h1 {
-      font-size: 2.5em;
-      animation: fadeInDown 1.5s ease;
+      font-size: 28px;
+      margin-bottom: 15px;
     }
     p {
-      font-size: 1.2em;
-      margin: 15px 0;
-      animation: fadeIn 2s ease;
+      font-size: 18px;
+      margin-bottom: 20px;
     }
-    .btn {
+    a {
       display: inline-block;
-      padding: 12px 25px;
-      margin-top: 20px;
-      font-size: 1.2em;
-      font-weight: bold;
-      color: #fff;
-      background: #ff5722;
-      border-radius: 30px;
+      padding: 12px 24px;
+      font-size: 18px;
+      background: #ffcc00;
+      color: black;
+      border-radius: 8px;
       text-decoration: none;
-      transition: 0.3s;
-      animation: bounce 2s infinite;
+      font-weight: bold;
+      transition: transform 0.2s;
     }
-    .btn:hover {
-      background: #e64a19;
-    }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+    a:hover {
+      transform: scale(1.1);
+      background: #ffe066;
     }
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
   <script>
@@ -64,9 +60,14 @@
   </script>
 </head>
 <body>
-  <h1>💎 Top Up Game MMM 💎</h1>
-  <p>Cara cepat, aman, dan resmi untuk mendapatkan item favoritmu!</p>
-  <a class="btn" href="https://buylink.id/mmm" target="_blank">🚀 Top Up Sekarang</a>
-  <p style="margin-top:20px; font-size:0.9em;">Kamu akan dialihkan otomatis dalam 5 detik...</p>
+  <div class="card">
+    <h1>💎 Topup Game MMM 💎</h1>
+    <p>Rasakan sensasi bermain tanpa batas!<br>
+    Klik tombol di bawah untuk langsung topup.</p>
+    <a href="https://buylink.id/mmm">🚀 Topup Sekarang</a>
+    <p style="margin-top:15px; font-size:14px; opacity:0.8;">
+      Anda akan dialihkan otomatis dalam 5 detik...
+    </p>
+  </div>
 </body>
 </html>
