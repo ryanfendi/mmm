@@ -1,0 +1,4 @@
+// Animasi interaktif (optional)
+document.addEventListener("mousemove", (e) => {
+  document.body.style.background = `linear-gradient(${e.pageX/10}deg, #2b1055, #7597de)`;
+});
